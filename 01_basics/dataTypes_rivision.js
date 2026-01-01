@@ -22,7 +22,7 @@ let userEmail; // undefined
 const id = Symbol('123'); // different
 const anotherId = Symbol('123'); // different
 
-console.log(id === anotherId); // false
+// console.log(id === anotherId); // false
 
 const bigNumber = 2145122n;
 
@@ -39,6 +39,30 @@ const myObject = {
 }
 // Functions
 const myFunction = function(){
-    
+
 }
+
+// *************************************************
+
+// Stack (Primitive) - copy milta hai
+// Queue (Non Primitive) - reference milta hai
+
+// Stack (Primitive)
+let myName = "Vansh";
+let anotherName = myName; // Vansh
+anotherName = "Once";
+// console.log(anotherName); // copy is storing
+// console.log(myName);
+
+// Queue (Non Primitive)
+const userOne = {
+    email: "fvfvf@gmail.com",
+    age: 20,
+}
+
+const userTwo = userOne;
+userTwo.email = "vansh@gmail.com";
+// reference
+console.log(userTwo.email); // vansh@gmail.com
+console.log(userOne.email); // vansh@gmail.com
 
