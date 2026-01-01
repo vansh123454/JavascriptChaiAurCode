@@ -22,6 +22,33 @@ let booleanIsLoggedIn = Boolean(isLoggedIn);
 
 let someNumber = 68;
 let stringNum = String(someNumber);
-console.log(stringNum); // output - 68
-console.log(typeof stringNum); // output - string
+// console.log(stringNum); // output - 68
+// console.log(typeof stringNum); // output - string
+
+// ***************** Operations *****************
+
+let value = 3;
+let negValue = - value;
+// console.log(negValue);
+
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2/2);
+// console.log(2**2);
+// console.log(2%2);
+
+
+// console.log(1 + "2"); // 12
+// console.log("1" + 2); // 12
+// console.log("1" + 2 + 2); // 122
+// console.log(1 + 2 + "2"); // 32
+
+
+// console.log(+true); // 1
+// console.log(+false); // 0
+
+let getCounter = 100;
+++getCounter;
+console.log(getCounter);
 
