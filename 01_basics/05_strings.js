@@ -12,7 +12,35 @@ const gameName = new String('TempleRun');
 
 // console.log(gameName[0]);
 
-console.log(gameName.length);
-console.log(gameName.toUpperCase());
-console.log(gameName.charAt(3)); // p
-console.log(gameName.indexOf('p')); // 3
+// console.log(gameName.length);
+// console.log(gameName.toUpperCase());
+// console.log(gameName.charAt(3)); // p
+// console.log(gameName.indexOf('p')); // 3
+
+const subject = new String('dataStructure');
+
+// 5th index will not include
+const newSubject = subject.substring(0,5);
+// console.log(newSubject);
+
+// (subject.length - 13) = (13 - 13) = 0
+/// from back slice(-13,2) = slice(0,2);;
+const newSubject2 = subject.slice(-13,2);
+// console.log(newSubject2);
+
+const newWord = "    Vansh  ";
+console.log(newWord);
+console.log(newWord.trim());
+
+const url = 'https://vansh.com/vansh%40bamborde';
+
+console.log(url.replace('%40', '-'));
+console.log(url.includes('vansh')); // true
+
+// split() se string ko array me convert krna
+// on the space we divide the word 
+const newName = "Javascript is the best programming language";
+console.log(newName.split(' '));
+// output - [ 'Javascript', 'is', 'the', 'best', 'programming', 'language' ]
+
+
