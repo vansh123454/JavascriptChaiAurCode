@@ -33,17 +33,17 @@ const newArray = myArray.join();
 
 // slice and spilce
 
-console.log("A ", myArray);
+console.log("A ", myArray); // A  [ 1, 2, 3, 4, 5 ]
 
 // it doest not include the last element
 const myn1 = myArray.slice(1,3);
-console.log(myn1);
-console.log("B ", myArray);
+console.log(myn1); // [ 2, 3 ]
+console.log("B ", myArray); // B  [ 1, 2, 3, 4, 5 ]
 
 // it does include the start and last element but when we do 'splice' then it will cut that portion from the original array
 const myn2 = myArray.splice(1,3);
-console.log("C ", myArray);
-console.log(myn2);
+console.log("C ", myArray); // C  [ 1, 5 ]
+console.log(myn2); // [ 2, 3, 4 ]
 
 // original array
 console.log(myArray); // only [1, 5]
