@@ -96,4 +96,16 @@ handleObject({
 }); // My name is once and i am 21 years old
 
 
+// array passing in function
+
+const myArray = [99, 641, 574, 621];
+function handleArray(getArray){
+    return getArray[1];
+}
+// console.log(handleArray(myArray)); // 641
+// we can directly pass array 
+console.log(handleArray([641, 574, 99, 10])); // 574
+
+
+
 
