@@ -44,6 +44,29 @@ console.log(Object.values(tinderUser)); // [ '124vff', 'vansh', false ]
 console.log(Object.entries(tinderUser)); // [ [ 'id', '124vff' ], [ 'name', 'vansh' ], [ 'isLoggedIn', false ] ]
 
 
+// *********** Destructure *****************************
+const course = {
+    courseId: "4125fbvd",
+    courseName: "Javascript",
+    courseTeacher: "Hitesh sir"
+}
+
+const {courseName, courseTeacher} = course;
+console.log(courseTeacher);
+
+// JSON 
+// it is just like objects but everything in double qoute
+// {
+//     "name": "Vansh",
+//     "courseName": "Javascript",
+//     "price": 999
+// }
+
+[
+    {},
+    {},
+    {},
+]
 
 
 
