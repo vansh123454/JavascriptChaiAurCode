@@ -38,6 +38,12 @@ console.log(obj3); // { '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
 const obj4 = {...obj1, ...obj2};
 console.log(obj4); // { '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
 
+// keys method gives the all keys in the array
+console.log(Object.keys(tinderUser)); // [ 'id', 'name', 'isLoggedIn' ]
+console.log(Object.values(tinderUser)); // [ '124vff', 'vansh', false ]
+console.log(Object.entries(tinderUser)); // [ [ 'id', '124vff' ], [ 'name', 'vansh' ], [ 'isLoggedIn', false ] ]
+
+
 
 
 
