@@ -28,3 +28,40 @@ if(true){
 console.log(a); 
 // console.log(b);  // b is not defined
 
+
+// **************************************************
+function one(){
+    const username = "vansh";
+    function two(){
+        const website = "http://something.com";
+        console.log(username);
+    }
+    // console.log(website); // give you error
+    two();
+}
+// one(); 
+
+if(true){
+    const username = "vansh";
+    if(username === "vansh"){
+        const website = " bamborde";
+        console.log(username + website);
+    }
+    // console.log(website); // give you error
+}
+// console.log(username); // give you error
+
+// ************** interesting concept *************
+
+console.log(addOne(5)); // it will run fine
+function addOne(num){
+    return num + 1;
+}
+
+// Cannot access 'addTwo' before initialization
+// console.log(addTwo(8)); // it will give an error bcoz of the what function we have written
+const addTwo = function(num){
+    return num + 1;
+}
+
+
