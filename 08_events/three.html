@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Duniya</h1>
+    <button style="cursor: pointer;" id="start">Start</button>
+    <button style="cursor: pointer;" id="stop">Stop</button>
+</body>
+<script>
+    // it will run again and again after 1 sec
+    // const nameAndDate = ()=>{
+    //     console.log("vansh");
+    // }
+    // setInterval(nameAndDate, 1000);
+
+
+    const nameAndDate = () => {
+        console.log("vansh", Date.now());
+    }
+
+    const startButton = document.querySelector('#start');
+    const stopButton = document.querySelector('#stop');
+
+    let intervalId;
+
+    startButton.addEventListener('click', (event)=>{
+        if(!intervalId) intervalId = setInterval(nameAndDate, 1000);
+        
+    })
+    stopButton.addEventListener('click', (event)=>{
+        clearInterval(intervalId);
+        intervalId = null;
+        console.log("Stopped");
+    })
+
+
+</script>
+</html>
