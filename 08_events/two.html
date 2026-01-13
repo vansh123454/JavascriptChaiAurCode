@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+    // takes the callback and time
+    // setTimeout(()=>{
+    //     console.log("Vansh");
+    // }, 2000);
+
+    // const sayMyname = ()=>{
+    //     console.log("Vansh");
+    // }
+
+    // // we paas reference of the function we do not function ececution like sayMyname() like this we do not paas
+    // setTimeout(sayMyname, 2000);
+
+
+    const sayMyname = () =>{
+        console.log("Vansh");
+    }
+    setTimeout(sayMyname, 2000);
+
+    const changeText = () =>{
+        document.querySelector('h1').innerHTML = "Best JS Course";
+    }
+    const changeMe = setTimeout(changeText, 2000);
+
+    // we are stopping the timeout on button click
+    const button = document.querySelector("#stop");
+    button.addEventListener('click', (event)=>{
+        clearTimeout(changeMe);
+        console.log("STOPPED");
+    })
+
+
+</script>
+</html>
