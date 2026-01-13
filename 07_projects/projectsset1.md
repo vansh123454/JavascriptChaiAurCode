@@ -189,5 +189,42 @@ const newGame = () => {
   });
 };
 
+```
+
+## project 5
+
+``` javascript
+
+// Random Color generate
+
+const randomColor = () => {
+  const hex = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += hex[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+console.log(randomColor());
+
+const startButton = document.querySelector('#start');
+const stopButton = document.querySelector('#stop');
+
+let intervalId;
+
+startButton.addEventListener('click', (event) => {
+  const changesColor = () => {
+    document.body.style.backgroundColor = randomColor();
+  };
+  if (!intervalId) {
+    intervalId = setInterval(changesColor, 1000);
+  }
+});
+
+stopButton.addEventListener('click', (event) => {
+  clearInterval(intervalId);
+  intervalId = null;
+});
+
 
 ```
