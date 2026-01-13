@@ -226,5 +226,33 @@ stopButton.addEventListener('click', (event) => {
   intervalId = null;
 });
 
-
 ```
+
+## project 6
+
+``` javascript
+
+const insert = document.querySelector('#insert');
+
+window.addEventListener('keydown', (event) => {
+  // console.log(event);
+  insert.innerHTML = `
+  <div class = 'color'>
+    <table>
+      <tr>
+        <th>Key</th>
+        <th>KeyCode</th>
+        <th>Code</th>
+      </tr>
+      <tr>
+        <td>${event.key}</td>
+        <td>${event.keyCode}</td>
+        <td>${event.code}</td>
+      </tr>
+    </table>
+  </div>
+  `;
+});
+
+
+``
